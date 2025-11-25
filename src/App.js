@@ -2361,7 +2361,7 @@ function MainPanel(){
             <h5 class="borderBottom"> 
               <FontAwesomeIcon icon={faChartBar} /> Graphs
             </h5>
-            <p class="textInfo codeBlock">
+            <p class="textInfo">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
             </p>
           </div>                   
