@@ -19,10 +19,9 @@
 
 .appHeader{
   width:calc(100% - 50px);
-  background-color: #1d1d1d;
   top:0px;
   left:50px;
-  padding:5px 5px;
+  padding:8px 8px;
   box-sizing: border-box;
   margin-left:50px;
 }
@@ -111,8 +110,8 @@
 
 body {
   margin:0px;
-  background: #1d1d1d url(images/colorBand.png) no-repeat left center;
-  background-size: 3px 860px;
+  background: #1d1d1d url(images/colorBand.png) no-repeat 0px top;
+  background-size: calc(100%) 4px;
 }
 
 .navMenu {
