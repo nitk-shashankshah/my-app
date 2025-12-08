@@ -129,7 +129,7 @@ body {
 .navMenu {
   list-style-type: none;
   padding:0px;
-  margin:25px 5px;
+  margin:25px 0px;
 }
 
 ul.navMenu li {
