@@ -2317,6 +2317,17 @@ function MainPanel({products, addToCart}){
         </ul>
       </div>
       <div class="flexAround">
+          <div class="curvedPanel" style={{width:"97%"}}>
+            <h3 class="borderBottom" > 
+              <FontAwesomeIcon icon={faQuestion} /> Ask Anything
+            </h3>
+            <p class="textInfo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
+            </p>
+          </div>  
+      </div>
+
+      <div class="flexAround">
         <div class="sideBar curvedPanel">
             <div>
             <h3 class="borderBottom"><FontAwesomeIcon icon={faHandPointDown} />  Solution Tree</h3>
