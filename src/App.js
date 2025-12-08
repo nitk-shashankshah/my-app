@@ -2316,14 +2316,11 @@ function MainPanel({products, addToCart}){
           <li><a>Memory Bank</a></li>
         </ul>
       </div>
-      <div class="flexRow">
-        <div class="sideBar">
-            <div style={{"marginLeft":"20px", "marginRight":"20px"}}>                            
+      <div class="flexAround">
+        <div class="sideBar curvedPanel">
             <div>
-            <h5 class="borderBottom"><FontAwesomeIcon icon={faHandPointDown} />  Solution Tree</h5>
-            </div>            
+            <h3 class="borderBottom"><FontAwesomeIcon icon={faHandPointDown} />  Solution Tree</h3>
             </div>
-            <div class="workspaceGraphic"></div>
             <div style={{"marginLeft":"20px", "marginRight":"20px"}}>                 
             <SimpleTreeView>             
               <TreeItem itemId="grid" label="Workspaces">
@@ -2357,19 +2354,20 @@ function MainPanel({products, addToCart}){
             </div>
         </div>
         <div class="contentBar">
-          <div style={{padding:"0px 0px 0px 20px"}}>
-            <h5 class="borderBottom"> 
+          <div class="curvedPanel">
+            <h3 class="borderBottom"> 
               <FontAwesomeIcon icon={faChartBar} /> Graphs
-            </h5>
-            <p class="textInfo codeBlock">
+            </h3>
+            <p class="textInfo">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
             </p>
+            <CreateChart></CreateChart>
           </div>                   
-          <CreateChart></CreateChart>
-          <div style={{padding:"10px 10px 15px 10px"}}>
-            <h5 class="borderBottom" > 
+         
+          <div class="curvedPanel">
+            <h3 class="borderBottom" > 
               <FontAwesomeIcon icon={faCode} /> Code
-            </h5>
+            </h3>
             <p class="textInfo">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
             </p>
@@ -2463,10 +2461,10 @@ function CreateChart(){
 function Header({}){
   return <div class="appHeader flexRow">
     <div class="logo"></div> 
-    <div class="searchBox">
+    {/*<div class="searchBox">
       <input type="search" id="search_query" name="q" placeholder="Enter your search terms"></input>
       <button class="searchBtn"><FontAwesomeIcon icon={faSearch} /></button>
-    </div>
+    </div>*/}
     <div class="iconButtons">
       <button class="btn"><FontAwesomeIcon icon={faBell} /></button>
       <button class="btn"><FontAwesomeIcon icon={faQuestion} /></button>
@@ -2483,7 +2481,7 @@ function LeftPanel({menuIcons}){
         +
         </div>
       </li>
-      <li class="iconMenu">    
+      <li class="iconMenu">
         <FontAwesomeIcon icon={faBackspace} />
       </li>
       <li class="iconMenu">    
