@@ -1,5 +1,5 @@
 .main {
-   background:#e0e0df;
+   background:#f2eeeb;
    width:100%;
    height:100vh;
 }
@@ -12,8 +12,8 @@
   height: calc(100vh);
   width: 70px;
   position: sticky;
-  top: 45px;
-  background-color: #e0e0df;
+  top: 0px;
+  background-color: rgb(230,229,229);
   border-right: 1px solid #ccc;
 }
 
