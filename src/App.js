@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState , Fragment} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBell, faQuestion, faCoffee, faFolder, faSearch, faUser, faBackspace, faCalendarAlt, faPaperclip, faAnchor, faAlarmClock, faUmbrella, faPaintbrush, faHand, faHandPointer, faTree, faCaretDown, faCode, faChartBar, faSquareRootVariable, faHandPointDown, faCaretUp, faCaretRight, faArrowRight, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBell, faQuestion, faCoffee, faFolder, faSearch, faUser, faBackspace, faCalendarAlt, faPaperclip, faAnchor, faAlarmClock, faUmbrella, faPaintbrush, faHand, faHandPointer, faTree, faCaretDown, faCode, faChartBar, faSquareRootVariable, faHandPointDown, faCaretUp, faCaretRight, faArrowRight, faArrowDown, faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
 
@@ -2310,9 +2310,9 @@ function MainPanel({toggleExpand, isExpanded}){
     <div>   
     <div class="dashboardPanel">      
       <div style={{width:"98%", borderRadius:50}}>
-          <div onClick={() => toggleExpand(isExpanded)} style={{paddingBottom:0, cursor: "pointer", paddingRight:10, paddingTop:20, paddingLeft:20}}>
-            {(isExpanded ? <FontAwesomeIcon style={{fontSize:24}} icon={faCaretDown} /> : <FontAwesomeIcon style={{fontSize:24}} icon={faCaretRight} /> )}
-            <span class="borderBottom"> 
+          <div onClick={() => toggleExpand(isExpanded)} style={{paddingBottom:0, cursor: "pointer", paddingRight:10, paddingTop:10,marginTop:10, paddingBottom:10, paddingLeft:20 }}>
+            {(isExpanded ? <FontAwesomeIcon style={{fontSize:18}} icon={faAngleDown} /> : <FontAwesomeIcon style={{fontSize:18}} icon={faAngleRight} /> )}
+            <span class="borderBottom" style={{fontWeight: 100}}> 
                Click here to begin
             </span>              
           </div>
@@ -2320,7 +2320,7 @@ function MainPanel({toggleExpand, isExpanded}){
           <div>
             {isExpanded ? (
             <>
-              <div style={isExpanded ? {minHeight:200, height:"unset"} : {height:0}} id="textBox">
+              <div style={isExpanded ? {height:"unset"} : {height:0}} id="textBox">
                 <ChatGPTInterface></ChatGPTInterface>   
               </div>
               <div style={{width:"98%",  paddingTop:0, textAlign: "center"}}>
