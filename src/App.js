@@ -15,6 +15,8 @@ import { ChartsXAxis } from '@mui/x-charts/ChartsXAxis';
 import { ChartsYAxis } from '@mui/x-charts/ChartsYAxis';
 import { ChartsTooltip } from '@mui/x-charts/ChartsTooltip';
 import { ChartsAxisHighlight } from '@mui/x-charts/ChartsAxisHighlight';
+import ChatGPTInterface from './ChatGPTInterface';
+
 const alphabetStock = [
   {
     "date": "2023-07-24",
@@ -2316,19 +2318,20 @@ function MainPanel({products, addToCart}){
           <li><a>Memory Bank</a></li>
         </ul>
       </div>
-      <div class="flexAround">
-          <div class="curvedPanel" style={{width:"95%"}}>
-            <h3 class="borderBottom" > 
-              <FontAwesomeIcon icon={faQuestion} /> Ask Anything
-            </h3>
-            <p class="textInfo">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-            </p>
-          </div>  
+      <div class="fullWidth">
+          <div style={{width:"98%", paddingBottom:0, paddingRight:10, paddingTop:20, paddingLeft:20}}>
+            <span class="borderBottom"> 
+              Where should we begin?
+            </span>
+            <span className="hint-text">
+               &nbsp;&nbsp;Start a conversation by typing a message below. Press Enter to send, Shift + Enter for new line
+            </span>     
+          </div>
+          <ChatGPTInterface></ChatGPTInterface>                       
       </div>
 
       <div class="flexAround">
-        <div class="sideBar curvedPanel">
+        <div class="sideBar curvedPanel margin-top-20">
             <div>
             <h3 class="borderBottom"><FontAwesomeIcon icon={faHandPointDown} />  Solution Tree</h3>
             </div>
@@ -2365,7 +2368,7 @@ function MainPanel({products, addToCart}){
             </div>
         </div>
         <div class="contentBar">
-          <div class="curvedPanel">
+          <div class="curvedPanel margin-top-20">
             <h3 class="borderBottom"> 
               <FontAwesomeIcon icon={faChartBar} /> Graphs
             </h3>
@@ -2375,7 +2378,7 @@ function MainPanel({products, addToCart}){
             <CreateChart></CreateChart>
           </div>                   
          
-          <div class="curvedPanel">
+          <div class="curvedPanel margin-top-20">
             <h3 class="borderBottom" > 
               <FontAwesomeIcon icon={faCode} /> Code
             </h3>
@@ -2402,11 +2405,7 @@ function MainPanel({products, addToCart}){
             <p class="textInfo">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-
-          </div>  
-
-
-
+          </div>
         </div>
       </div>
     </div>
