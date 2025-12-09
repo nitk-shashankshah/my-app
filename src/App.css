@@ -23,13 +23,12 @@
 
 .appHeader{
   width:calc(100%);
-  background-color:#00439d;
+  background-color:#2d2d2d;
   top:0px;
   left:50px;
   padding: 10px 10px 10px 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #fff;
-  border-top: 1px solid #5281e3;
 }
 
 .App-logo {
@@ -162,7 +161,7 @@ ul.navMenu li:hover .iconItem{
 }
 
 .btn{
-  background-color: #00439d;
+  background-color: #2d2d2d;
   color:#fff;
   font-size: 18px;
   border:none!important;
@@ -287,7 +286,6 @@ ul.navMenu li:hover .iconItem{
 }
 
 .borderBottom{
-  border-bottom: 1px solid rgb(243, 238, 238);
   font-weight: 300;
   font-size: 18px;
 }
