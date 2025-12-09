@@ -8,13 +8,13 @@ export default function ChatGPTInterface() {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    /*messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });*/
   }, [messages]);
 
   useEffect(() => {
     if (textareaRef.current) {
-      textareaRef.current.style.height = 'auto';
-      textareaRef.current.style.height = Math.min(textareaRef.current.scrollHeight, 200) + 'px';
+      /*textareaRef.current.style.height = 'auto';
+      textareaRef.current.style.height = Math.min(textareaRef.current.scrollHeight, 200) + 'px';*/
     }
   }, [message]);
 
@@ -50,6 +50,7 @@ export default function ChatGPTInterface() {
                 onKeyDown={handleKeyDown}
                 placeholder="Message ChatGPT..."
                 rows={1}
+                id="queryText"
                 className="curvedPanel fullWidth margin-top-20 padding-20"                
               />
               <button
@@ -64,7 +65,7 @@ export default function ChatGPTInterface() {
                     <p></p>
                   ) : (
                     <div className="input-box">    
-                      <div className="curvedPanel fullWidth margin-top-20">
+                      <div className="fullWidth margin-top-20">
                         {<div className="messages-section">
                           <div className="messages-container">
                             

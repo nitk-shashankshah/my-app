@@ -2307,27 +2307,21 @@ const series = [
 
 function MainPanel({products, addToCart}){
   return (
-    <div class="dashboardPanel">
-      <div class="topNavigation">
-        <ul>
-          <li><a>Business Discovery</a></li>
-          <li><a>Deep Researcher</a></li>
-          <li><a>Data Discovery and Master Data Preperation</a></li>
-          <li><a>EDA Engine</a></li>
-          <li><a>ML Engine</a></li>
-          <li><a>Memory Bank</a></li>
-        </ul>
-      </div>
-      <div class="fullWidth">
-          <div style={{width:"98%", paddingBottom:0, paddingRight:10, paddingTop:20, paddingLeft:20}}>
+    <div>   
+    <div class="dashboardPanel">      
+      <div style={{width:"98%"}}>
+          <div style={{paddingBottom:0, paddingRight:10, paddingTop:20, paddingLeft:20}}>
             <span class="borderBottom"> 
               Where should we begin?
             </span>
-            <span className="hint-text">
-               &nbsp;&nbsp;Start a conversation by typing a message below. Press Enter to send, Shift + Enter for new line
-            </span>     
+              
           </div>
-          <ChatGPTInterface></ChatGPTInterface>                       
+          <ChatGPTInterface></ChatGPTInterface>   
+          <div style={{width:"98%", paddingBottom:0, paddingRight:10, paddingTop:20, paddingLeft:20}}>
+            <span className="hint-text">
+              &nbsp;&nbsp;Start a conversation by typing a message below. Press Enter to send, Shift + Enter for new line
+            </span>
+          </div>
       </div>
 
       <div class="flexAround">
@@ -2409,6 +2403,7 @@ function MainPanel({products, addToCart}){
         </div>
       </div>
     </div>
+    </div>
   )
 }
 
@@ -2469,19 +2464,31 @@ function CreateChart(){
 }
 
 function Header({}){
-  return <div class="appHeader flexRow">
-    <div class="flexRow">
-    <button class="btn"><FontAwesomeIcon icon={faBars} style={{fontSize:30}}/></button>
-    <div class="logo"></div> 
+  return <div>
+    <div class="appHeader flexRow">
+      <div class="flexRow">
+      <button class="btn"><FontAwesomeIcon icon={faBars} style={{fontSize:30}}/></button>
+      <div class="logo"></div> 
+      </div>
+      {/*<div class="searchBox">
+        <input type="search" id="search_query" name="q" placeholder="Enter your search terms"></input>
+        <button class="searchBtn"><FontAwesomeIcon icon={faSearch} /></button>
+      </div>*/}
+      <div class="iconButtons">
+        <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faBell} /></button>
+        <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faQuestion} /></button>
+        <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faUser} /></button>
+      </div>
     </div>
-    {/*<div class="searchBox">
-      <input type="search" id="search_query" name="q" placeholder="Enter your search terms"></input>
-      <button class="searchBtn"><FontAwesomeIcon icon={faSearch} /></button>
-    </div>*/}
-    <div class="iconButtons">
-      <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faBell} /></button>
-      <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faQuestion} /></button>
-      <button class="btn"><FontAwesomeIcon style={{fontSize:20}} icon={faUser} /></button>
+   <div class="topNavigation">
+        <ul>
+          <li><a>Business Discovery</a></li>
+          <li><a>Deep Researcher</a></li>
+          <li><a>Data Discovery and Master Data Preperation</a></li>
+          <li><a>EDA Engine</a></li>
+          <li><a>ML Engine</a></li>
+          <li><a>Memory Bank</a></li>
+        </ul>
     </div>
   </div>
 }
